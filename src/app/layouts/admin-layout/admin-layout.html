@@ -1,0 +1,20 @@
+<div class="flex flex-col h-screen w-full font-sans overflow-hidden bg-slate-50">
+  
+  <app-navbar></app-navbar>
+
+  <div class="flex flex-1 flex-row overflow-hidden w-full">
+    
+    <app-sidebar class="flex shrink-0"></app-sidebar>
+
+    <div class="flex flex-col flex-1 min-w-0 overflow-y-auto">
+      
+      <main class="flex-1 p-8">
+        <router-outlet></router-outlet>
+      </main>
+
+      <app-footer class="w-full shrink-0"></app-footer>
+
+    </div>
+
+  </div>
+</div>
